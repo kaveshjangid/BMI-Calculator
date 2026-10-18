@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kavesh's BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="bmi-card">
+
+            <h1>Kavesh's BMI Calculator</h1>
+            <p class="subtitle">Check your Body Mass Index</p>
+
+            <!-- Weight -->
+            <div class="input-group">
+                <label for="weight">Weight</label>
+
+                <div class="input-box">
+                    <input 
+                        type="number" 
+                        id="weight" 
+                        placeholder="Enter weight"
+                        min="1"
+                    >
+
+                    <span>kg</span>
+                </div>
+            </div>
+
+            <!-- Height -->
+            <div class="input-group">
+                <label for="height">Height</label>
+
+                <div class="input-box">
+                    <input 
+                        type="number" 
+                        id="height" 
+                        placeholder="Enter height"
+                        min="1"
+                    >
+
+                    <span>cm</span>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button id="calculateBtn">
+                    Calculate BMI
+                </button>
+
+                <button id="resetBtn" class="reset">
+                    Reset
+                </button>
+
+            </div>
+
+            <!-- Error -->
+            <p id="error"></p>
+
+            <!-- Result -->
+            <div class="result" id="result">
+
+                <p>Your BMI</p>
+
+                <h2 id="bmiValue">--</h2>
+
+                <h3 id="bmiCategory">Enter your details</h3>
+
+                <p id="message">
+                    Your BMI result will appear here.
+                </p>
+
+            </div>
+
+            <!-- BMI Scale -->
+            <div class="scale">
+
+                <h3>BMI Scale</h3>
+
+                <div class="scale-bar">
+
+                    <div class="underweight"></div>
+                    <div class="normal"></div>
+                    <div class="overweight"></div>
+                    <div class="obesity"></div>
+
+                </div>
+
+                <div class="scale-labels">
+
+                    <span>
+                        <b>Underweight</b>
+                        <small>&lt; 18.5</small>
+                    </span>
+
+                    <span>
+                        <b>Normal</b>
+                        <small>18.5–24.9</small>
+                    </span>
+
+                    <span>
+                        <b>Overweight</b>
+                        <small>25–29.9</small>
+                    </span>
+
+                    <span>
+                        <b>Obesity</b>
+                        <small>30+</small>
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Healthy range -->
+            <div class="healthy-range">
+
+                <h3>Healthy BMI Range</h3>
+
+                <p>
+                    18.5 – 24.9
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
